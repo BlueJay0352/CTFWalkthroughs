@@ -1,35 +1,37 @@
 CyberDefenders CTF Lab PsExec Hunt
+---
 
 ![psexec](https://github.com/user-attachments/assets/49a036ed-995e-4c49-83f9-50995f8f1e82)
 
-
 https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/
 
-Scenario
+#### Scenario
 	Our Intrusion Detection System (IDS) has raised an alert, indicating suspicious lateral movement activity involving the use of PsExec. 
 	To effectively respond to this incident, your role as a SOC Analyst is to analyze the captured network traffic stored in a PCAP file.
 
-Machine Environment 
-	Windows 10 running in VMware workstation
-	Wireshark
+
+#### Machine Environment 
+
+- Windows 10 running in VMware workstation
+- Wireshark
 	
 	
-1.  In order to effectively trace the attacker's activities within our network, can you determine the IP address of the machine where the attacker initially gained access?
+### 1.  In order to effectively trace the attacker's activities within our network, can you determine the IP address of the machine where the attacker initially gained access?
 
-	I like to begin by looking at the pcap statistics in wireshark to get an idea of how many endpoints are in the conversation.  From there we can sort by bytes sent and received to see the top talkers in 	the pcap.  Also, taking note of which ports are utilized within the conversations will tell us what kind of traffic we need to focus our analysis on.
+I like to begin by looking at the pcap statistics in wireshark to get an idea of how many endpoints are in the conversation.  From there we can sort by bytes sent and received to see the top talkers in 	the pcap.  Also, taking note of which ports are utilized within the conversations will tell us what kind of traffic we need to focus our analysis on.
 
-	Wireshark -> Statistics -> Conversations
+Wireshark -> Statistics -> Conversations
 	
-	![stats](https://github.com/user-attachments/assets/2c016c62-db22-43d8-acdd-f7bb65ce1fdd)
+![stats](https://github.com/user-attachments/assets/2c016c62-db22-43d8-acdd-f7bb65ce1fdd)
 
 
-	Looking deeper into our top talker IP 10.0.0.130, we filter for the source packets.
+Looking deeper into our top talker IP 10.0.0.130, we filter for the source packets.
 	Wireshark filter: ip.src == 10.0.0.130
 	
- 	![sourceip](https://github.com/user-attachments/assets/ea7dd1fd-3b0b-4e60-9c14-ac01b5aa3b3b)
+ ![sourceip](https://github.com/user-attachments/assets/ea7dd1fd-3b0b-4e60-9c14-ac01b5aa3b3b)
 
 	
-	Based on this behavior of 10.0.0.130 enumerating the windows shares of 10.0.0.133 we can assume the attacker gained access to 10.0.0.130. 
+Based on this behavior of 10.0.0.130 enumerating the windows shares of 10.0.0.133 we can assume the attacker gained access to 10.0.0.130. 
 	
   
 2.  To fully comprehend the extent of the breach, can you determine the machine's hostname to which the attacker first pivoted?
