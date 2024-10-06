@@ -38,7 +38,7 @@ An executable named “ChromeSetup.exe” has sent a SYN packet and is waiting f
 ---
 Using the Volatility3 plugin **cmdline** we can see where it was launched from
 
-*python3 vol.py -f ../investigations/ramnit/mem.dmp windows.cmdline
+*python3 vol.py -f ../investigations/ramnit/mem.dmp windows.cmdline*
 ![image](https://github.com/user-attachments/assets/4585bfa7-1c21-4225-a4b8-879e85952f2c)
 
 
