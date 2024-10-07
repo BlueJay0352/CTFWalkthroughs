@@ -30,7 +30,7 @@ Mounted Windows file system
 ### 1.  Which application was used to download the malicious file?
 ---
 
-Now where to start and what should we be looking for? The lab points us in the direction of a WinRaR file (Preliminary analysis by the IT department has identified a potential compromise linked to an exploited vulnerability in **WinRAR** software)
+The lab points us in the direction of a WinRaR file (Preliminary analysis by the IT department has identified a potential compromise linked to an exploited vulnerability in **WinRAR** software)
 
 I list all the .rar files so see where this possible rar file is located.  
 
