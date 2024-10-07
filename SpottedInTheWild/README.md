@@ -23,6 +23,7 @@ Extract the lab file and mount the .vhd
 ![image](https://github.com/user-attachments/assets/b24aafa1-dcf7-4059-b01b-360854b49f8b)
 
 Mounted Windows file system
+
 ![image](https://github.com/user-attachments/assets/f0e87a3b-a78e-4bc4-8743-d2bcb9070dbe)
 
 
