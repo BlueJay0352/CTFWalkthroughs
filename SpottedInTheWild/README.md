@@ -38,7 +38,7 @@ I list all the .rar files so see where this possible rar file is located.
 ![image](https://github.com/user-attachments/assets/cfb73d01-6be1-4a3f-be01-7b40c7521f66)
 
 ### 2.  What is the UTC timestamp for when the suspicious file was first downloaded?
-
+---
 We can assume the suspicious file is what we found from the previous question **SANS SEC401.rar**
 Lets look at the Windows "$MFT" file which is a database that tracks all object changes on NTFS systems.  This should give us our timestamp for when it was created on the file system.
 
@@ -54,9 +54,17 @@ Search for the “SANS SEC401" file and note the column “Created”
 ![image](https://github.com/user-attachments/assets/15a06fc1-4c2b-4e12-bccd-3843b48da0cd)
 
 
+### 3.  What is the CVE identifier of the vulnerability used in this attack?
+---
 
 
+### 4.  What is the URL used by the attacker to download the second stage of malware?
+---
 
+Using **Strings** to find any obvious urls in the file.
 
+*strings 'SANS SEC401.pdf.cmd' | findstr "\//"*
+
+![image](https://github.com/user-attachments/assets/b797eab8-4a1e-487a-8bd5-3ec2037f96a1)
 
 
