@@ -127,5 +127,14 @@ Continuing with the analysis of *run.ps1* lets open it with a text editor.
 
 ![image](https://github.com/user-attachments/assets/bd34f0f5-2663-49d2-8cfa-2edaeca74c00)
 
-Looks like Base64 which gets reversed then decoded into var $LOAdCode.  Var $PWN assigns the command *invoke-expression* then creates an alias and assigns the value to $PWN which runs $LOAdCode
+Looks like Base64 which gets reversed then decoded into var $LOAdCode.  Var $PWN assigns the command *invoke-expression* then creates an alias and assigns the value to $PWN and finally runs $LOAdCode
 
+We need to see what that base64 string does.  Let use cyberchef and create a recipe which reverses then decodes the base64 string.
+
+![image](https://github.com/user-attachments/assets/728493d3-780a-4065-a7d8-75044bf829b9)
+
+The string appears to set a range of IP addresses, create a file for the output, loop through the range while testing the connection status, saving the results to var outputFile, convert $outputFile to base64 and assign to $var - ultimately sending the results to a web server
+
+Back to the original question of where the exfiltrated file is saved.  We can see the file path where it saves *$outputFile* in the decode script.  
+
+*end*
