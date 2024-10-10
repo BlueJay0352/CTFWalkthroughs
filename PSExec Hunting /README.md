@@ -95,6 +95,7 @@ Delving deeper to confirm attempted lateral movement to 10.0.0.131 we can use th
  
  **BINGO!**  SMB2 Logon attempt using account jdoe failure and “Marketing-PC” within the HexDump for 10.0.0.131
 	
-	
+
+*end*
 	
 	
