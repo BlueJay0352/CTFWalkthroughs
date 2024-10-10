@@ -58,6 +58,7 @@ Search for the “SANS SEC401" file and note the column “Created”
 ### 3.  What is the CVE identifier of the vulnerability used in this attack?
 ---
 
+Searching cvedetails.com for “winrar” yields many results but looking at each description you can determine the one relating to file and folder sharing the same name.
 
 ### 4.  What is the URL used by the attacker to download the second stage of malware?
 ---
