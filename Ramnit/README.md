@@ -88,3 +88,4 @@ Using VirusTotals behaviour page for the malware sample shows the domain.
 
 ![image](https://github.com/user-attachments/assets/32d69877-7e87-430b-8262-0fc781cfceca)
 
+*end*
