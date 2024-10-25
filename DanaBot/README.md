@@ -75,10 +75,10 @@ Paste the hash and search.  Go to the “Behavior” tab and scroll down to find
 ![image](https://github.com/user-attachments/assets/ff5e2274-6e3a-45b5-839a-25542332d879)
 
 
-### 4.
+### 4.  What is the MD5 hash of the second malicious file?
 ---
 
-What is the MD5 hash of the second malicious file?
+Using PowerShell again with Get-FileHash we can specify the algorithm as MD5
 
 ![image](https://github.com/user-attachments/assets/23b16797-608f-4907-9e64-90e908ac2fe1)
 
