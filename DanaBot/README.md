@@ -53,7 +53,8 @@ After doing some quick formatting to make the code a bit more viewable, we can p
 ---
 
 Within WireShark
-File -> Export Objects -> HTTP
+
+	File -> Export Objects -> HTTP
 
 Save files login.php and resources.dll since these seem suspicious
 
@@ -69,3 +70,16 @@ Get the sha265 hash of login.php
 ---
 
 Taking that hash we got from question 2, lets go to VirusTotal.com and do some research.
+Paste the hash and search.  Go to the “Behavior” tab and scroll down to find “Process and service actions”
+
+![image](https://github.com/user-attachments/assets/ff5e2274-6e3a-45b5-839a-25542332d879)
+
+
+### 4.
+---
+
+What is the MD5 hash of the second malicious file?
+
+![image](https://github.com/user-attachments/assets/23b16797-608f-4907-9e64-90e908ac2fe1)
+
+
