@@ -13,7 +13,7 @@ Our SOC team detected suspicious activity in the network traffic. A machine has 
 #### Machine Environment 
 
 - WireShark
-- VirusTotal and Any.run
+- VirusTotal
 
 
 ### 1.  What is the malicious file name used for initial access?
@@ -75,11 +75,41 @@ Paste the hash and search.  Go to the “Behavior” tab and scroll down to find
 ![image](https://github.com/user-attachments/assets/ff5e2274-6e3a-45b5-839a-25542332d879)
 
 
-### 4.  What is the MD5 hash of the second malicious file?
+### 4.  What is the extension of the second malicious file used by the attacker?
+---
+
+VirusTotal shows HTTP request which downloads a .dll file.  PCAP also confirm this file was downloaded.
+
+![image](https://github.com/user-attachments/assets/bf1d48ca-6080-44e0-b9d6-519bf5b785fa)
+
+![image](https://github.com/user-attachments/assets/224147e0-7d4e-4a24-a60b-fec19f5b6100)
+
+### 5.  What is the MD5 hash of the second malicious file?
 ---
 
 Using PowerShell again with Get-FileHash we can specify the algorithm as MD5
 
 ![image](https://github.com/user-attachments/assets/23b16797-608f-4907-9e64-90e908ac2fe1)
+
+### 6.  What is the IP address used by the attacker in initial access?
+---
+
+Frame 250 is the GET request for resources.dll and we can trace the end of the transfer to frame 9952 (HTTP 200).  Start from there to look for an IP address listed on VirusTotal.
+
+![image](https://github.com/user-attachments/assets/561fbd0a-7c1e-4c76-8682-c30486170d1e)
+
+![image](https://github.com/user-attachments/assets/8cd5fdc0-6477-486a-8cb6-b6d23387d677)
+
+
+### 7.  What is the last malicious IP address in the PCAP that is known to be used as CnC by DanaBot?
+---
+
+Reference the list of contacted IP's from VirusTotal and go through each.
+
+WireShark filter *ip.addr==91.201.67.85*
+
+![image](https://github.com/user-attachments/assets/87381a1e-3256-4432-8b26-1633712fae83)
+
+
 
 
