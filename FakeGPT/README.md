@@ -28,7 +28,10 @@ The **content_scripts** section defines scripts that are run within web pages wh
 
 So the loader.js is run persistently in the background while every time a URL is accessed the app.js is injected into the page.  
 	
- Base64
+ Looking through app.js there is an obvious function which encodes the payload using a specific method.  CryptoJS.enc.Base64
+
+ ![image](https://github.com/user-attachments/assets/e681dbc7-e914-4977-89a6-2a27cb5492a9)
+
 	
 
 ### 2.  Which website does the extension monitor for data theft, targeting user accounts to steal sensitive information?
