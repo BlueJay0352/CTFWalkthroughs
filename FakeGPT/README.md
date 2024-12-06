@@ -48,11 +48,10 @@ The Base64 string can be decoded using CyberChef.
 
 ### 3.  Which type of HTML element is utilized by the extension to send stolen data?
 ---
+This function defines the way that data is sent using an HTML element tag
 
-https://www.w3schools.com/js/js_htmldom_elements.asp
-	
-	<img>
-	
+![image](https://github.com/user-attachments/assets/7532460f-a428-41dd-87b6-b0e38d50a1c5)
+
 
 ### 4.  What is the first specific condition in the code that triggers the extension to deactivate itself?
 ---
