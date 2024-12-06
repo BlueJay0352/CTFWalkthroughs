@@ -55,7 +55,8 @@ This function defines the way that data is sent using an HTML element tag
 
 ### 4.  What is the first specific condition in the code that triggers the extension to deactivate itself?
 ---
-The first script to get loaded from manifest.json is **loader.js**.  Examining the first lines of code shows a test to determine if the browser is running in a VM.  
+The first script to get loaded from manifest.json is **loader.js**.  Examining the first lines of code shows a test to determine if the browser is running in a VM.
+
 ![image](https://github.com/user-attachments/assets/057ee8b8-a119-4657-a8c7-606e081069c0)
 
 
