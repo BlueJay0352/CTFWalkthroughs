@@ -1,8 +1,6 @@
 CyberDefenders CTF Lab PsExec Hunt
 ---
 
-![psexec](https://github.com/user-attachments/assets/49a036ed-995e-4c49-83f9-50995f8f1e82)
-
 https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/
 
 #### Scenario
