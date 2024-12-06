@@ -36,8 +36,14 @@ So the loader.js is run persistently in the background while every time a URL is
 
 ### 2.  Which website does the extension monitor for data theft, targeting user accounts to steal sensitive information?
 ---
+This block of code within **app.js** targets usernames and passwords within submitted web pages.  We can assume the website is the encoded Base64 string.
 
-	www.facebook.com
+![image](https://github.com/user-attachments/assets/60084172-6527-47d8-9908-b56072c31083)
+
+
+The Base64 string can be decoded using CyberChef.
+
+![image](https://github.com/user-attachments/assets/2f688c79-7f6a-40a0-a1e9-7dc2b056980d)
 
 
 ### 3.  Which type of HTML element is utilized by the extension to send stolen data?
