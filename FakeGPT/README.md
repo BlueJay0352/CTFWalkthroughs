@@ -60,37 +60,50 @@ The first script to get loaded from manifest.json is **loader.js**.  Examining t
 ![image](https://github.com/user-attachments/assets/057ee8b8-a119-4657-a8c7-606e081069c0)
 
 
-
 ### 5.  Which event does the extension capture to track user input submitted through forms?
 ---
+This line of JavaScript code is adding an event listener to the **document** object that listens for *submit* events.
 
-	submit
+![image](https://github.com/user-attachments/assets/832cb318-55f8-4787-8fd2-2a8d5d55c6fe)
+
 
 ### 6.  Which API or method does the extension use to capture and monitor user keystrokes?
 ---
+This code adds an event listener to the **document** object that listen for *keydown* events.
 
-	keydown
-
+![image](https://github.com/user-attachments/assets/b66e183a-8f86-4c96-8da6-8d9269a7ee68)
+	
 
 ### 7.  What is the domain where the extension transmits the exfiltrated data?
 ---
+The function **sendToServer** contains the domain where the exfiltrated data is sent.  
 
-	Mo.Elshaheedy.com
+![image](https://github.com/user-attachments/assets/6c96518f-8195-439b-8f00-f54bd0720325)
+
 
 ### 8.  Which function in the code is used to exfiltrate user credentials, including the username and password?
 ---
+The name of the function and the code are obvious.
 
-	exfiltrateCredentials(username, password)
+![image](https://github.com/user-attachments/assets/3645bb03-6ab2-4318-8803-75bba30d901f)
 
 
 ### 9.  Which encryption algorithm is applied to secure the data before sending?
 ---
+The **key** variable is a fixed string converted into UTF-8 encoding.
 
-	AES
+The **iv* variable is the initialization vector which ensures if the same plaintext key are replayed, the resulting ciphertext with differ.
+
+The **encrypted** variable uses the AES algorithm to encrypt the data using the key and iv.
+
+![image](https://github.com/user-attachments/assets/3ed0df98-025f-4170-9835-8bca98ec6f2a)
+
 
 ### 10.  What critical browser API does the extension use to access and manipulate cookies?
 ---
+Since the **manifest.json** contains the “cookies" permission, the extension can query and modify chome cookies.  
 
+![image](https://github.com/user-attachments/assets/00b884a9-fca3-4a62-ab51-164de64b7167)
 
 
 
