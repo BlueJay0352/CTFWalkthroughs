@@ -14,14 +14,17 @@ We're currently in the midst of a murder investigation, and we've obtained the v
 ### 1.  Based on the accounts of the witnesses and individuals close to the victim, it has become clear that the victim was interested in trading. This has led him to invest all of his money and acquire debt. Can you identify the SHA256 of the trading application the victim primarily used on his phone?
 ---
 Download the zip file from cyberdefenders.org and run *aleapp.py* to produce the parsed event output.
+
 ![image](https://github.com/user-attachments/assets/26e5200a-61ae-489e-804e-e97ed34e0a1a)
 
 Open the *index.html* file in the reports folder with a web browser.
+
 ![image](https://github.com/user-attachments/assets/58574aa1-7d79-455d-93a1-01fd0465e85b)
 
 Now you can browse the data within the phone dump.
 
 Navigate to *Installed Apps* page to get hash values for installed applications
+
 ![image](https://github.com/user-attachments/assets/c229e5a6-6db8-449e-9c41-04e37f182cfb)
 
 
