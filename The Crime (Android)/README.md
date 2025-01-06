@@ -29,12 +29,14 @@ Navigate to *Installed Apps* page to get hash values for installed applications
 ---
 
 Navigate to the *SMS messages* page.
+
 ![image](https://github.com/user-attachments/assets/fa299cdd-7a78-404f-9b97-931003ecd003)
 
 ### 3.  What is the name of the person to whom the victim owes money?
 ---
 
 Cross reference the number (address) in the SMS messages to a contact in the contacts report.
+
 ![image](https://github.com/user-attachments/assets/07076e38-6495-49e8-b1be-8fb9f7f524f4)
 
 ### 4.  Based on the statement from the victim's family, they said that on September 20, 2023, he departed from his residence without informing anyone of his destination. Where was the victim located at that moment?
@@ -67,5 +69,6 @@ The glide_cache contains recently accessed images.
 ---
 
 Navigate to the *Discord Chats* page to view the content of the messages.  
+
 ![image](https://github.com/user-attachments/assets/0f6cc33a-771a-48e1-981f-7dfa9d5217bc)
 
