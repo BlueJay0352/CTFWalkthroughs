@@ -20,6 +20,8 @@ Download the zip file from cyberdefenders.org and run *aleapp.py* to produce the
 Open the *index.html* file in the reports folder with a web browser.
 
 ![image](https://github.com/user-attachments/assets/58574aa1-7d79-455d-93a1-01fd0465e85b)
+![image](https://github.com/user-attachments/assets/975db02b-634b-47e5-9f94-7bfdfd3a8c5c)
+
 
 Now you can browse the data within the phone dump.
 
