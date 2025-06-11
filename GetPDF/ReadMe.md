@@ -19,6 +19,7 @@ https://cyberdefenders.org/blueteam-ctf-challenges/getpdf/
 Extract the 47-GetPDF.rar file and open the lala.pcap in WireShark.
 
 Statistics -> HTTP -> Requests
+
 ![image](https://github.com/user-attachments/assets/79b96b47-26a3-471d-bc7a-3dd92e9750a1)
 
 
