@@ -93,3 +93,15 @@ Run pdf-parser.py and grep for “filter” to list the filtering schemes.
 
 ### 7.  What is the number of the 'object stream' that might contain malicious JS code?
 ---
+
+You can use pdf-parser or PDFStreamDumper tools for finding the JavaScript within the PDF.
+I used PDFStreamDumper below and searched for JavaScript.  It points me to object 4 which references object 5.
+
+![image](https://github.com/user-attachments/assets/6db0d93c-892d-4642-85e4-5067eab309d5)
+
+Navigate to object 5 and you will find the JavaScript embedded within the PDF
+
+![image](https://github.com/user-attachments/assets/5751d705-caa2-4560-9509-15656ad2f6be)
+
+
+
