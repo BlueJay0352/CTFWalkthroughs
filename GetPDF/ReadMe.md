@@ -1,6 +1,5 @@
-
-CyberDefenders CTF Lab GetPDF 
-
+CyberDefenders CTF Lab GetPDF
+---
 
 https://cyberdefenders.org/blueteam-ctf-challenges/getpdf/
 
