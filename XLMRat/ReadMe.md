@@ -32,6 +32,15 @@ Use WireShark to export the HTTP files to your Windows Flare VM
 	
 File -> Export Objects -> HTTP
 
+![image](https://github.com/user-attachments/assets/43b4cef2-81a7-46b1-93e1-0bba88230c9c)
+
+The xlm.txt file contains a Visual Basic Script (VBS) that declares an array and stores pieces of code that gets concatenated using a for loop.
+
+![image](https://github.com/user-attachments/assets/bf331842-daba-41a5-abca-11a863e6ae8d)
+
+***RUN CODE AT YOUR OWN RISK
+ 
+By placing the wscript.echo command we can view the output of the variable to the console.
 
 
 
