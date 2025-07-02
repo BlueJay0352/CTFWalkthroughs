@@ -106,8 +106,8 @@ We can grab the portion of LOLBin code and run it independently giving us the pa
 ---
 
 	-The malware creates a PowerShell script (conted.ps1) containing the 2 HEX variables and loads NewPE2.dll
-	-Then creates a bat file (conted.bat) which uses powershell.exe to run the ps1 file.
-	-Finally creating a .vbs (conted.vbs) which leverages WScript.shell to run conted.bat
+	-Then creates a batch file (conted.bat) which uses powershell.exe to run the ps1 file.
+	-Finally creating a VBS file (conted.vbs) which leverages WScript.shell to run conted.bat
 
 ![image](https://github.com/user-attachments/assets/f4c95d80-08c0-4a0f-9bd6-1658b410fe33)
 ![image](https://github.com/user-attachments/assets/750c2c1c-7c0a-4c1b-af10-8c002f41ce4c)
