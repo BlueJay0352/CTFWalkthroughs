@@ -84,14 +84,16 @@ Get the SHA256 of the Stub.exe file as this is the malware executable
 
 ![image](https://github.com/user-attachments/assets/0d421874-af85-4e08-a789-8e78e273b443)
 
-### 4.  
-What is the malware family label based on Alibaba?
+### 4.  What is the malware family label based on Alibaba?
 ---
+
+![image](https://github.com/user-attachments/assets/df479b8a-70b9-436d-b932-7ca89e7f147b)
 
 
 ### 5.  What is the timestamp of the malware's creation?
 ---
 
+![image](https://github.com/user-attachments/assets/ee901fd2-baf2-4b3e-9e8f-4875befbb5d6)
 
 ### 6.  Which LOLBin is leveraged for stealthy process execution in this script? Provide the full path.
 ---
