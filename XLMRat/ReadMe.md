@@ -34,7 +34,7 @@ File -> Export Objects -> HTTP
 
 ![image](https://github.com/user-attachments/assets/43b4cef2-81a7-46b1-93e1-0bba88230c9c)
 
-The xlm.txt file contains a Visual Basic Script (VBS) that declares an array and stores pieces of code that gets concatenated using a for loop.
+The xlm.txt file contains a Visual Basic Script (VBS) that declares an array and stores pieces of code that get concatenated using a for loop.
 
 ![image](https://github.com/user-attachments/assets/bf331842-daba-41a5-abca-11a863e6ae8d)
 
@@ -68,7 +68,7 @@ Using a web site like https://whois.domaintools.com/ shows the hosting provider 
 ### 3.  By analyzing the malicious scripts, two payloads were identified: a loader and a secondary executable. What is the SHA256 of the malware executable?
 ---
 
-Analyzing the mdm.jpg file we open it with a text editor to see two long HEX variables some PowerShell and VBS.  Lets isolate both HEX variables into their own files and convert those HEX files to executable.  Part of the mdm.jpg file has the script needed to convert since it performs those actions when run.  
+Analyzing the mdm.jpg file we open it with a text editor to see two long HEX variables with some PowerShell and VBS code.  Lets isolate both HEX variables into their own files and convert those HEX files to executable.  Part of the mdm.jpg file has the script needed to convert since it performs those actions when run.  
 
 ![image](https://github.com/user-attachments/assets/704145a1-65f9-4ed7-bc55-6f53e6a4fb87)
 
