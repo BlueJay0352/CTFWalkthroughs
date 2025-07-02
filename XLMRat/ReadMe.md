@@ -57,6 +57,59 @@ Bring the output into a text editor and clean it up.  The "[BYTe[]]" lines are n
 
 This script downloads the first stage of malware and executes in into memory using Invoke-Expression (IeX)
 
+### 2.  
+Which hosting provider owns the associated IP address?
+---
+
+Using a web site like https://whois.domaintools.com/ shows the hosting provider name.
+
+![image](https://github.com/user-attachments/assets/bd612ade-da08-4bc9-9dff-108e6e7c696e)
+
+### 3.  By analyzing the malicious scripts, two payloads were identified: a loader and a secondary executable. What is the SHA256 of the malware executable?
+---
+
+Analyzing the mdm.jpg file we open it with a text editor to see two long HEX variables some PowerShell and VBS.  Lets isolate both HEX variables into their own files and convert those HEX files to executable.  Part of the mdm.jpg file has the script needed to convert since it performs those actions when run.  
+
+![image](https://github.com/user-attachments/assets/704145a1-65f9-4ed7-bc55-6f53e6a4fb87)
+
+Create a simple PowerShell script to convert both HEX values to executables.
+
+![image](https://github.com/user-attachments/assets/33894fb9-3ff8-446f-8a38-8a1c6968e6b2)
+
+Both newly created file details show their original filename.  Stub.exe and NewPE2.dll		
+
+![image](https://github.com/user-attachments/assets/91988140-e6d6-4e92-8c7f-8bb3dc715949)
+
+Get the SHA256 of the Stub.exe file as this is the malware executable
+
+![image](https://github.com/user-attachments/assets/0d421874-af85-4e08-a789-8e78e273b443)
+
+### 4.  
+What is the malware family label based on Alibaba?
+---
+
+
+### 5.  What is the timestamp of the malware's creation?
+---
+
+
+### 6.  Which LOLBin is leveraged for stealthy process execution in this script? Provide the full path.
+---
+
+We can grab the portion of LOLBin code and run it independently giving us the path.
+
+![image](https://github.com/user-attachments/assets/13cc40ff-696e-48e3-b7a6-887eeb74c973)
+
+### 7.  The script is designed to drop several files. List the names of the files dropped by the script.
+---
+
+The malware creates a PowerShell script (conted.ps1) containing the 2 HEX variables and loads NewPE2.dll
+Then creates a bat file (conted.bat) which uses powershell.exe to run the ps1 file.
+Finally creating a .vbs (conted.vbs) which leverages WScript.shell to run conted.bat
+
+![image](https://github.com/user-attachments/assets/f4c95d80-08c0-4a0f-9bd6-1658b410fe33)
+![image](https://github.com/user-attachments/assets/750c2c1c-7c0a-4c1b-af10-8c002f41ce4c)
+
 
 
 
