@@ -57,8 +57,7 @@ Bring the output into a text editor and clean it up.  The "[BYTe[]]" lines are n
 
 This script downloads the first stage of malware and executes in into memory using Invoke-Expression (IeX)
 
-### 2.  
-Which hosting provider owns the associated IP address?
+### 2.  Which hosting provider owns the associated IP address?
 ---
 
 Using a web site like https://whois.domaintools.com/ shows the hosting provider name.
