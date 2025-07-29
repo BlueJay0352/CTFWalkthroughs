@@ -76,7 +76,7 @@ Check often used folders like Documents, /home, or Desktop for user created file
 ### 7.  How many times was Apache run?
 ---
 
-Apache stores their logs at /var/logs/apache2.  All logs files are empty which tells us that Apache was never ran.
+Apache stores its logs at /var/logs/apache2.  All log files are empty which tells us that Apache was never ran.
 
 <img width="839" height="167" alt="image" src="https://github.com/user-attachments/assets/3aee37ca-2768-4099-9f96-91250226876f" />
 
