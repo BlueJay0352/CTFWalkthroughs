@@ -14,7 +14,9 @@ As the forensic examiner, you have three critical artefacts in hand: a PCAP capt
 #### Machine Environment 
 
 VMware Workstation Local Lab
+
 remnux
+
 Windows 10 w/ FLARE (https://github.com/mandiant/flare-vm)
 
 ### 1. After flooding the IIS host with rapid-fire probes, the attacker reveals their origin. Which IP address generated this reconnaissance traffic?
